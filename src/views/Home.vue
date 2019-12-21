@@ -10,7 +10,6 @@ import LayoutDefault from "../layouts/LayoutDefault.vue";
 export default {
   name: "home",
   created() {
-    console.log("Created")
     this.$emit("update:layout", LayoutDefault);
   },
   components: {

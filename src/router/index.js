@@ -21,7 +21,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  // Commented. Fallback to hashes
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
