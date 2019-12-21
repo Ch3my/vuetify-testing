@@ -21,7 +21,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  // Commented. Fallback to hashes
+  // Commented. Fallback to hashes for Cordova to compile
   // mode: 'history',
   base: process.env.BASE_URL,
   routes
