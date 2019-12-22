@@ -165,7 +165,7 @@ export default {
     testingMenu: [
       {
         icon: "mdi-account",
-        text: "Geolocation",
+        text: "Testing Menu",
         route: "",
         children: [
           {

@@ -20,9 +20,36 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <!-- To manage Splash Screen -->
+        <!-- you can use any density that exists in the Android project -->
+        <!-- Parece que no funciona bien esto. la imagen es algo estatico -->
+        <!-- y el spinner no aparece sino tengo una imagen definida -->
+        <!-- La imagen carga sobre fondo negro -->
+        <!-- Worrkaround con java puro -->
+        <!-- https://github.com/apache/cordova-plugin-splashscreen/issues/193 -->
+        <!-- TODO. Crear algo java que poner ahi -->
+        <splash src="assets/img/pwa/splash.gif" density="land-hdpi"/>
+        <splash src="assets/img/pwa/splash.gif" density="land-ldpi"/>
+        <splash src="assets/img/pwa/splash.gif" density="land-mdpi"/>
+        <splash src="assets/img/pwa/splash.gif" density="land-xhdpi"/>
+        <splash src="assets/img/pwa/splash.gif" density="land-xxhdpi"/>
+
+        <splash src="assets/img/pwa/splash.gif" density="port-hdpi"/>
+        <splash src="assets/img/pwa/splash.gif" density="port-ldpi"/>
+        <splash src="assets/img/pwa/splash.gif" density="port-mdpi"/>
+        <splash src="assets/img/pwa/splash.gif" density="port-xhdpi"/>
+        <splash src="assets/img/pwa/splash.gif" density="port-xxhdpi"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <!-- Chemy Personalizados -->
+    <icon src="assets/img/pwa/icon.png" />
+    <!-- Personalize splashscreen options -->
+    <!-- Averiguar como se pueden usar estar propiedades para mi beneficio -->
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenSpinnerColor" value="grey" />
+    <preference name="SplashScreenBackgroundColor" value="0x00000000"/>
 </widget>

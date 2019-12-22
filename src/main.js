@@ -8,6 +8,23 @@ import '@babel/polyfill'
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import '@mdi/font/css/materialdesignicons.css'
 import VueCompositionApi from '@vue/composition-api'
+import moment from 'moment'
+
+// Lodash
+import _ from 'lodash'; 
+Object.defineProperty(Vue.prototype, '$_', { value: _ });
+
+// Numeral
+import VueNumerals from 'vue-numerals';
+// Vue.use(VueNumerals); // default locale is 'en'
+// nosotros queremos setearle la Locale
+// with options
+Vue.use(VueNumerals, {
+  locale: 'es'
+});
+// Moment
+Vue.prototype.moment = moment
+
 
 Vue.config.productionTip = false
 Vue.use(VueCompositionApi)
