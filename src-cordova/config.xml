@@ -28,17 +28,22 @@
         <!-- Worrkaround con java puro -->
         <!-- https://github.com/apache/cordova-plugin-splashscreen/issues/193 -->
         <!-- TODO. Crear algo java que poner ahi -->
-        <splash src="assets/img/pwa/splash.gif" density="land-hdpi"/>
-        <splash src="assets/img/pwa/splash.gif" density="land-ldpi"/>
-        <splash src="assets/img/pwa/splash.gif" density="land-mdpi"/>
-        <splash src="assets/img/pwa/splash.gif" density="land-xhdpi"/>
-        <splash src="assets/img/pwa/splash.gif" density="land-xxhdpi"/>
 
-        <splash src="assets/img/pwa/splash.gif" density="port-hdpi"/>
-        <splash src="assets/img/pwa/splash.gif" density="port-ldpi"/>
-        <splash src="assets/img/pwa/splash.gif" density="port-mdpi"/>
-        <splash src="assets/img/pwa/splash.gif" density="port-xhdpi"/>
-        <splash src="assets/img/pwa/splash.gif" density="port-xxhdpi"/>
+        <!-- Esto intenta modificar un archivo automaticamente pero creo que no funciona -->
+        <!-- Tiene notas importantes -->
+        <hook src="hooks/modifySplashScreen.js" type="after_build" />
+
+        <splash src="assets/img/pwa/splash.png" density="land-hdpi"/>
+        <splash src="assets/img/pwa/splash.png" density="land-ldpi"/>
+        <splash src="assets/img/pwa/splash.png" density="land-mdpi"/>
+        <splash src="assets/img/pwa/splash.png" density="land-xhdpi"/>
+        <splash src="assets/img/pwa/splash.png" density="land-xxhdpi"/>
+
+        <splash src="assets/img/pwa/splash.png" density="port-hdpi"/>
+        <splash src="assets/img/pwa/splash.png" density="port-ldpi"/>
+        <splash src="assets/img/pwa/splash.png" density="port-mdpi"/>
+        <splash src="assets/img/pwa/splash.png" density="port-xhdpi"/>
+        <splash src="assets/img/pwa/splash.png" density="port-xxhdpi"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -49,7 +54,8 @@
     <!-- Personalize splashscreen options -->
     <!-- Averiguar como se pueden usar estar propiedades para mi beneficio -->
     <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="8000" />
     <preference name="SplashScreenSpinnerColor" value="grey" />
-    <preference name="SplashScreenBackgroundColor" value="0x00000000"/>
+    <preference name="SplashScreenBackgroundColor" value="green"/>
+    <preference name="SplashMaintainAspectRatio" value="true" />
 </widget>

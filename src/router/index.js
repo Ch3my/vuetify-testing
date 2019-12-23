@@ -32,6 +32,11 @@ const routes = [
     name: 'form',
     component: () => import(/* webpackChunkName: "camera" */ '../views/Form.vue')
   },
+  {
+    path: '/splashscreen',
+    name: 'splashscreen',
+    component: () => import(/* webpackChunkName: "camera" */ '../views/Splashscreen.vue')
+  },
 ]
 
 const router = new VueRouter({

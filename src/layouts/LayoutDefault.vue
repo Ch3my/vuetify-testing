@@ -177,7 +177,8 @@ export default {
           { icon: "", text: "Geolocation", route: "/geolocation", grandChildren: [] }
         ]
       },
-      { icon: "", text: "Camera", route: "/camera", children: [] }
+      { icon: "", text: "Camera", route: "/camera", children: [] },
+      { icon: "", text: "SplashScreen", route: "/splashscreen", children: [] },
     ]
   })
 };

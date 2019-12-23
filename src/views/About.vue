@@ -1,5 +1,5 @@
 <template>
-  <layout-flipped>
+  <!-- <layout-flipped> -->
     <div class="about">
       <h1>This is an about page</h1>
       <p>s</p>
@@ -11,7 +11,7 @@
       <p></p>
       <p></p>
     </div>
-  </layout-flipped>
+  <!-- </layout-flipped> -->
 </template>
 
 <script>
