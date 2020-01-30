@@ -179,6 +179,7 @@ export default {
       },
       { icon: "", text: "Camera", route: "/camera", children: [] },
       { icon: "", text: "SplashScreen", route: "/splashscreen", children: [] },
+      { icon: "", text: "Push Notification", route: "/pushnotifications", children: [] },
     ]
   })
 };

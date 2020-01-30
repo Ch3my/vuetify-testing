@@ -37,6 +37,16 @@ const routes = [
     name: 'splashscreen',
     component: () => import(/* webpackChunkName: "camera" */ '../views/Splashscreen.vue')
   },
+  {
+    path: '/pushnotifications',
+    name: 'pushnotifications',
+    component: () => import(/* webpackChunkName: "camera" */ '../views/Pushnotifications.vue')
+  },
+  {
+    path: '/pushnotifications/subscribe',
+    name: 'subscribe',
+    component: () => import(/* webpackChunkName: "camera" */ '../views/Subscribe.vue')
+  },
 ]
 
 const router = new VueRouter({

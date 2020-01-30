@@ -11,7 +11,7 @@ import VueCompositionApi from '@vue/composition-api'
 import moment from 'moment'
 
 // Lodash
-import _ from 'lodash'; 
+import _ from 'lodash';
 Object.defineProperty(Vue.prototype, '$_', { value: _ });
 
 // Numeral
